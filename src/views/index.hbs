@@ -1,0 +1,19 @@
+<h1>Index</h1>
+
+<iframe style="display: none;" name="dummyframe" id="dummyframe"></iframe>
+
+<form action="/send_msg" method="POST" target="dummyframe">
+    <input type="hidden" name="token" value="{{token}}">
+    <select name="channelid">
+        {{#each channels}}
+            <option value="{{this.id}}">{{this.name}}</option>
+        {{/each}}
+    </select>
+    <input type="text" name="text" placeholder="message text">
+    <input type="submit" value="Send!">
+    <br>
+    <br>
+    {{#each images}}
+        <img src={{images.path}} alt={{images.name}} width="120" height="120">
+    {{/each}}
+</form>
