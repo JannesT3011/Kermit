@@ -1,19 +1,8 @@
-<h1>Index</h1>
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
 
-<iframe style="display: none;" name="dummyframe" id="dummyframe"></iframe>
+<h1>Kermit</h1>
 
-<form action="/send_msg" method="POST" target="dummyframe">
-    <input type="hidden" name="token" value="{{token}}">
-    <select name="channelid">
-        {{#each channels}}
-            <option value="{{this.id}}">{{this.name}}</option>
-        {{/each}}
-    </select>
-    <input type="text" name="text" placeholder="message text">
-    <input type="submit" value="Send!">
-    <br>
-    <br>
-    {{#each images}}
-        <img src={{images.path}} alt={{images.name}} width="120" height="120">
-    {{/each}}
-</form>
+
+{{#each images}}
+    <a href={{this.uri}}><img src={{this.path}} alt={{this.name}} width="120" height="120" id="memes"></a>
+{{/each}}

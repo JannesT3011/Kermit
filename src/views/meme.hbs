@@ -1,0 +1,26 @@
+<!-- MemePage -->
+
+<link rel="stylesheet" href="meme.css">
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+
+<img src={{img}} alt={{alt}} height="600", width="600" id="memeimg">
+<br>
+<iframe style="display: none;" name="dummyframe" id="dummyframe"></iframe>
+<br>
+<br>
+<div class="senddiv">
+    <h2>{{alt}}</h2>
+    <hr>
+    <form action={{url}} method="POST" target="dummyframe">
+        <select name="channelid" id="sendmeme">
+            {{#each channels}}
+                <option value="{{this.id}}">{{this.server}}: {{this.name}}</option>
+            {{/each}}
+        </select>
+        <br>
+        <input type="submit" value="Send this meme" id="sendmeme">
+    </form>
+    <br>
+    <p>YeAh!   ABCDEEEEE</p>
+</div>
