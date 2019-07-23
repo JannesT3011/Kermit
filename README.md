@@ -38,5 +38,6 @@ Now you can run the app, by typing ``node main.js`` in your console <br>
 
 <br>
 <div align=center>
+    <strong>~ Have fun and enjoy  ~</strong><br>
     <strong>by Bmbus© (2019)</strong>
 </div>
