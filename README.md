@@ -31,6 +31,7 @@ Now you can run the app, by typing ``node main.js`` in your console <br>
 ### Todo:
 - [ ] Upload memes
 - [ ] Random function
+- [ ] Search function
 - [ ] Add favourite memes
 - [ ] Bot commands (send_meme, upload_meme)
 - [ ] ?category system
